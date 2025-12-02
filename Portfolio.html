@@ -77,6 +77,26 @@
         #home h2, #home h3 {
             color: #005ea6;
         }
+
+        /* ⭐ Custom link colors you asked for */
+        .music-link {
+            color: #1db954; /* Spotify green */
+            font-weight: bold;
+        }
+        .music-link:hover {
+            color: #14833b;
+            text-decoration: underline;
+        }
+
+        .movie-link {
+            color: #ff8c00; /* Orange */
+            font-weight: bold;
+        }
+        .movie-link:hover {
+            color: #cc7000;
+            text-decoration: underline;
+        }
+
         #home ul {
             list-style-type: none;
             padding: 0;
@@ -165,7 +185,6 @@
             color: #666;
             margin-top: 2rem;
         }
-        /* Responsive Design */
         @media (max-width: 768px) {
             #main {
                 margin: 1rem;
@@ -191,19 +210,27 @@
     </div>
 
     <div id="main">
-        <!-- Home Section -->
         <div id="home" class="section">
             <h1>Welcome to Apolo Rhey Cericos' Website</h1>
             <p>I am a 19-year-old from Lindaville Subdivision Phase 2, Tagbilaran City, Bohol. I am passionate about learning how things work and understanding how to construct them in a digital manner.</p>
             <img src="apolocute.jpg" alt="apolorhey" width="200">
+
             <h2>About Me</h2>
-            <p>I’m currently studying Bachelor of Science in Information Technology (BSIT) at Holy Name University. My hobbies include <a href="https://open.spotify.com/playlist/5eqARmhWM2BcbOC0RuHzFu" target="_blank">listening to music</a>, <a href="https://boxd.it/cLWHP" target="_blank">watching movies/series'</a>, playing basketball, and reading.</p>
+            <p>
+                I’m currently studying Bachelor of Science in Information Technology (BSIT) at Holy Name University. 
+                My hobbies include 
+                <a href="https://open.spotify.com/playlist/5eqARmhWM2BcbOC0RuHzFu" target="_blank" class="music-link">listening to music</a>, 
+                <a href="https://boxd.it/cLWHP" target="_blank" class="movie-link">watching movies/series'</a>,
+                playing basketball, and reading.
+            </p>
+
             <h3>Education</h3>
             <ul>
                 <li>2nd year-college student, Bachelor of Science in Information Technology, Holy Name University, 2025-2026 [Current]</li>
                 <li>Graduated Senior High from Holy Spirit School of Tagbilaran [2023-2024]</li>
                 <li>Graduated Elementary [2017-2018] and Junior High [2022-2023] from GreAtMinds Leadership Academy</li>
             </ul>
+
             <h3>Skills</h3>
             <ul>
                 <li>Video Editing</li>
@@ -211,7 +238,6 @@
             </ul>
         </div>
 
-        <!-- Contact Section -->
         <div id="contact" class="section">
             <h1>Contact Me</h1>
             <p>Feel free to reach out to me via the form below or email me at [apolocericos3@gmail.com].</p>
@@ -229,26 +255,5 @@
             </form>
         </div>
 
-        <!-- Projects Section -->
         <div id="projects" class="section">
             <h1>My Projects</h1>
-            <p>Here are some of my past and ongoing projects and outputs.</p>
-            <div class="project">
-                <h2>InfoTrack [Information Tracker]</h2>
-                <p>An ongoing project for my CCS 104 class. It is made specifically for an IT services company to make viewing employee info more convenient.</p>
-                <a href="CCS104FINAL.exe" download>View Project</a>
-            </div>
-            <div class="project">
-                <h2>Budget Tracker and Expense Calculator</h2>
-                <p>A previous project from my CCS 102 class. It is made to make budgeting and tracking expenses easier.</p>
-                <a href="project.exe" download>View Project</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="footer">
-        <p>&copy; 2025 Apolo Rhey Cericos. All rights reserved.</p>
-    </div>
-</body>
-</html>
-
