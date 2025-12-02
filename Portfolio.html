@@ -47,14 +47,8 @@
             animation: fadeInUp 0.6s ease-out;
         }
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         #home {
             text-align: center;
@@ -82,31 +76,25 @@
             color: #1db954;
             font-weight: bold;
         }
-        .music-link:hover {
-            color: #14833b;
-            text-decoration: underline;
-        }
+        .music-link:hover { color: #14833b; text-decoration: underline; }
+
         .movie-link {
             color: #ff8c00;
             font-weight: bold;
         }
-        .movie-link:hover {
-            color: #cc7000;
-            text-decoration: underline;
-        }
+        .movie-link:hover { color: #cc7000; text-decoration: underline; }
+
         .basketball-link {
             color: red;
             font-weight: bold;
         }
         .reading-link {
-            color: #ffd600;
+            color: #800080;
             font-weight: bold;
         }
 
-        .star-gradient {
-            background: linear-gradient(to right, #ff8c00, #32cd32, #1e90ff);
-            -webkit-background-clip: text;
-            color: transparent;
+        .star {
+            color: gold;
             font-size: 22px;
             font-weight: bold;
         }
@@ -118,9 +106,12 @@
             gap: 0.5rem;
             margin-top: 0.5rem;
             font-size: 1rem;
-            text-decoration: none;
+            font-weight: bold;
+            text-decoration: underline;
             transition: transform 0.2s ease;
         }
+        #phone { color: green; }
+        #facebook { color: blue; }
         .contact-info svg {
             width: 20px;
             height: 20px;
@@ -128,18 +119,7 @@
             flex-shrink: 0;
             transition: transform 0.2s ease;
         }
-        .contact-info:hover svg {
-            transform: translateY(-2px);
-        }
-        #phone {
-            color: green;
-        }
-        #facebook {
-            color: blue;
-        }
-        .contact-info:hover {
-            text-decoration: underline;
-        }
+        .contact-info:hover svg { transform: translateY(-2px); }
 
         #home ul {
             list-style-type: none;
@@ -193,6 +173,7 @@
             background: linear-gradient(135deg, #005ea6 0%, #004080 100%);
             transform: translateY(-2px);
         }
+
         .project {
             margin-bottom: 2rem;
             padding: 1.5rem;
@@ -206,9 +187,7 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
         }
-        .project h2 {
-            color: #0073cf;
-        }
+        .project h2 { color: #0073cf; }
         .project a {
             display: inline-block;
             margin-top: 1rem;
@@ -219,9 +198,8 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        .project a:hover {
-            background-color: #005ea6;
-        }
+        .project a:hover { background-color: #005ea6; }
+
         #footer {
             text-align: center;
             padding: 1.5rem;
@@ -229,18 +207,11 @@
             color: #666;
             margin-top: 2rem;
         }
+
         @media (max-width: 768px) {
-            #main {
-                margin: 1rem;
-                padding: 1rem;
-            }
-            #home h1 {
-                font-size: 2rem;
-            }
-            #nav a {
-                margin: 0 0.5rem;
-                padding: 0.25rem 0.5rem;
-            }
+            #main { margin: 1rem; padding: 1rem; }
+            #home h1 { font-size: 2rem; }
+            #nav a { margin: 0 0.5rem; padding: 0.25rem 0.5rem; }
         }
     </style>
 </head>
@@ -271,14 +242,14 @@
 
             <h3>Skills</h3>
             <ul>
-                <li>Video Editing: <span class="star-gradient">★★★★☆</span></li>
-                <li>HTML, C, Javascript Coding: <span class="star-gradient">★★★★★</span></li>
+                <li>Video Editing: <span class="star">★★★★☆</span></li>
+                <li>HTML, C, Javascript Coding: <span class="star">★★★★★</span></li>
             </ul>
         </div>
 
         <div id="contact" class="section">
             <h1>Contact Me</h1>
-            <p>Feel free to reach out to me via the form below, my personal facebook account, my phone number, or email me at [apolocericos3@gmail.com].</p> 
+            <p>Feel free to reach out to me via the form below, my personal Facebook account, my phone number, or email me at [apolocericos3@gmail.com].</p> 
             
             <a href="tel:09683996560" id="phone" class="contact-info">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.48 2.53.74 3.88.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.35.26 2.67.74 3.88.13.28.07.61-.27 1.11l-2.35 2.35z"/></svg>
