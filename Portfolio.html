@@ -59,15 +59,29 @@
         #home {
             text-align: center;
         }
-        #home img {
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .image-container img {
             border-radius: 50%;
-            margin-top: 1rem;
             border: 5px solid #0073cf;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
         }
-        #home img:hover {
+        .image-container img:hover {
             transform: scale(1.05);
+        }
+        .main-image {
+            width: 200px;
+            height: 200px;
+        }
+        .side-image {
+            width: 100px;
+            height: 100px;
         }
         #home h1 {
             font-size: 2.5rem;
@@ -178,6 +192,14 @@
                 margin: 0 0.5rem;
                 padding: 0.25rem 0.5rem;
             }
+            .image-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .side-image {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
@@ -195,10 +217,11 @@
         <div id="home" class="section">
             <h1>Welcome to Apolo Rhey Cericos' Website</h1>
             <p>I am a 19-year-old from Lindaville Subdivision Phase 2, Tagbilaran City, Bohol. I am passionate about learning how things work and understanding how to construct them in a digital manner.</p>
-                       <div class="image-container">
+            <div class="image-container">
                 <img src="apolobball.jpg" alt="apolorheybball" class="side-image">
                 <img src="apologwapo.jpg" alt="apolorhey" class="main-image">
                 <img src="apolocute.jpg" alt="apolorheyagain" class="side-image">
+            </div>
             <h2>About Me</h2>
             <p>I’m currently studying Bachelor of Science in Information Technology (BSIT) at Holy Name University. My hobbies include <a href="https://open.spotify.com/playlist/5eqARmhWM2BcbOC0RuHzFu" target="_blank">listening to music</a>, <a href="https://boxd.it/cLWHP" target="_blank">watching movies/series'</a>, playing basketball, and reading.</p>
             <h3>Education</h3>
@@ -254,4 +277,3 @@
     </div>
 </body>
 </html>
-
