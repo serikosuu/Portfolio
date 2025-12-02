@@ -59,31 +59,15 @@
         #home {
             text-align: center;
         }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-            margin: 1rem 0;
-            flex-wrap: nowrap; /* Prevents wrapping to keep them side-by-side */
-        }
-        .image-container img {
+        #home img {
             border-radius: 50%;
+            margin-top: 1rem;
             border: 5px solid #0073cf;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
-            object-fit: cover; /* Crops image to fit circle without distortion */
         }
-        .image-container img:hover {
+        #home img:hover {
             transform: scale(1.05);
-        }
-        .main-image {
-            width: 150px;
-            height: 150px;
-        }
-        .side-image {
-            width: 80px;
-            height: 80px;
         }
         #home h1 {
             font-size: 2.5rem;
@@ -182,7 +166,7 @@
             margin-top: 2rem;
         }
         /* Responsive Design */
-        @media (max-width: 480px) { /* Lowered threshold to only stack on very small screens */
+        @media (max-width: 768px) {
             #main {
                 margin: 1rem;
                 padding: 1rem;
@@ -193,14 +177,6 @@
             #nav a {
                 margin: 0 0.5rem;
                 padding: 0.25rem 0.5rem;
-            }
-            .image-container {
-                flex-direction: column; /* Stacks vertically only on tiny screens */
-                gap: 0.5rem;
-            }
-            .side-image {
-                width: 80px;
-                height: 80px;
             }
         }
     </style>
@@ -219,11 +195,7 @@
         <div id="home" class="section">
             <h1>Welcome to Apolo Rhey Cericos' Website</h1>
             <p>I am a 19-year-old from Lindaville Subdivision Phase 2, Tagbilaran City, Bohol. I am passionate about learning how things work and understanding how to construct them in a digital manner.</p>
-            <div class="image-container">
-                <img src="apolobball.jpg" alt="apolorheybball" class="side-image">
-                <img src="apologwapo.jpg" alt="apolorhey" class="main-image">
-                <img src="apolocute.jpg" alt="apolorheyagain" class="side-image">
-            </div>
+            <img src="apolocute.jpg" alt="apolorhey" width="200">
             <h2>About Me</h2>
             <p>I’m currently studying Bachelor of Science in Information Technology (BSIT) at Holy Name University. My hobbies include <a href="https://open.spotify.com/playlist/5eqARmhWM2BcbOC0RuHzFu" target="_blank">listening to music</a>, <a href="https://boxd.it/cLWHP" target="_blank">watching movies/series'</a>, playing basketball, and reading.</p>
             <h3>Education</h3>
