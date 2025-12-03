@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Apolo Rhey Cericos - Personal Website</title>
+    <title>Apolo Rhey Cericos - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background-color: #f8f9fa;
             min-height: 100vh;
         }
         #header {
-            background: linear-gradient(135deg, #0073cf 0%, #005ea6 100%);
-            padding: 1.5rem;
+            background-color: #2c3e50;
+            padding: 1rem 2rem;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 100;
         }
         #nav a {
-            color: white;
+            color: #ecf0f1;
             text-decoration: none;
-            font-weight: bold;
-            margin: 0 1.5rem;
+            font-weight: 500;
+            margin: 0 1rem;
             padding: 0.5rem 1rem;
-            border-radius: 25px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         #nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
+            background-color: #34495e;
+            color: #fff;
         }
         #main {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 2rem auto;
             padding: 2rem;
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .section {
             margin-bottom: 3rem;
@@ -56,8 +57,8 @@
         #home img {
             border-radius: 50%;
             margin-top: 1rem;
-            border: 5px solid #0073cf;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 4px solid #3498db;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease;
         }
         #home img:hover {
@@ -65,146 +66,166 @@
         }
         #home h1 {
             font-size: 2.5rem;
-            color: #0073cf;
+            color: #2c3e50;
             margin-bottom: 1rem;
         }
         #home h2, #home h3 {
-            color: #005ea6;
+            color: #34495e;
+            margin-top: 2rem;
+        }
+        #home p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 1rem;
         }
 
-        .music-link {
-            color: #1db954;
-            font-weight: bold;
+        .interest-link {
+            color: #3498db;
+            font-weight: 500;
+            text-decoration: none;
         }
-        .music-link:hover { color: #14833b; text-decoration: underline; }
-
-        .movie-link {
-            color: #ff8c00;
-            font-weight: bold;
-        }
-        .movie-link:hover { color: #cc7000; text-decoration: underline; }
-
-        .basketball-link {
-            color: red;
-            font-weight: bold;
-        }
-        .reading-link {
-            color: #800080;
-            font-weight: bold;
+        .interest-link:hover {
+            text-decoration: underline;
         }
 
-        .star {
-            color: gold;
-            font-size: 22px;
-            font-weight: bold;
+        .education-item, .achievement-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .education-item h4, .achievement-item h4 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        .education-item p, .achievement-item p {
+            margin: 0;
+            color: #555;
+        }
+
+        .skill-bar {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            height: 10px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+        .skill-fill {
+            height: 100%;
+            background-color: #3498db;
+            border-radius: 10px;
+            transition: width 0.3s ease;
         }
 
         .contact-info {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            margin-top: 0.5rem;
+            margin: 0.5rem 1rem;
             font-size: 1rem;
-            font-weight: bold;
-            text-decoration: underline;
+            font-weight: 500;
+            text-decoration: none;
+            color: inherit;
             transition: transform 0.2s ease;
         }
-        #phone { color: green; }
-        #facebook { color: blue; }
+        #phone { color: #27ae60; }
+        #facebook { color: #3b5998; }
         .contact-info svg {
             width: 20px;
             height: 20px;
             fill: currentColor;
             flex-shrink: 0;
-            transition: transform 0.2s ease;
         }
-        .contact-info:hover svg { transform: translateY(-2px); }
+        .contact-info:hover {
+            transform: translateY(-2px);
+        }
 
-        #home ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        #home li {
-            background: #f0f8ff;
-            margin: 0.5rem 0;
-            padding: 0.75rem;
-            border-left: 5px solid #0073cf;
-            border-radius: 5px;
-        }
         #contact form {
             display: flex;
             flex-direction: column;
-            max-width: 500px;
-            margin: 0 auto;
-            background: #f9f9f9;
+            max-width: 600px;
+            margin: 2rem auto 0;
+            background: #f8f9fa;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         #contact label {
             margin-top: 1rem;
-            font-weight: bold;
-            color: #0073cf;
+            font-weight: 500;
+            color: #2c3e50;
         }
         #contact input, #contact textarea {
             padding: 0.75rem;
             margin-top: 0.5rem;
-            border: 2px solid #ddd;
-            border-radius: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
             transition: border-color 0.3s ease;
         }
         #contact input:focus, #contact textarea:focus {
-            border-color: #0073cf;
+            border-color: #3498db;
             outline: none;
         }
         #contact button {
             margin-top: 1.5rem;
             padding: 0.75rem;
-            background: linear-gradient(135deg, #0073cf 0%, #005ea6 100%);
+            background-color: #3498db;
             color: white;
             border: none;
             cursor: pointer;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: background 0.3s ease, transform 0.2s ease;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         #contact button:hover {
-            background: linear-gradient(135deg, #005ea6 0%, #004080 100%);
+            background-color: #2980b9;
             transform: translateY(-2px);
         }
 
         .project {
             margin-bottom: 2rem;
             padding: 1.5rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .project:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
-        .project h2 { color: #0073cf; }
+        .project h2 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .project p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
         .project a {
             display: inline-block;
             margin-top: 1rem;
             padding: 0.5rem 1rem;
-            background-color: #0073cf;
+            background-color: #3498db;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 4px;
             transition: background-color 0.3s ease;
         }
-        .project a:hover { background-color: #005ea6; }
+        .project a:hover {
+            background-color: #2980b9;
+        }
 
         #footer {
             text-align: center;
             padding: 1.5rem;
-            background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
-            color: #666;
+            background-color: #2c3e50;
+            color: #ecf0f1;
             margin-top: 2rem;
         }
 
@@ -212,6 +233,7 @@
             #main { margin: 1rem; padding: 1rem; }
             #home h1 { font-size: 2rem; }
             #nav a { margin: 0 0.5rem; padding: 0.25rem 0.5rem; }
+            .contact-info { display: block; margin: 0.5rem 0; }
         }
     </style>
 </head>
@@ -226,30 +248,73 @@
 
     <div id="main">
         <div id="home" class="section">
-            <h1>Welcome to Apolo Rhey Cericos' Website</h1>
-            <p>I am a 19-year-old from Lindaville Subdivision Phase 2, Tagbilaran City, Bohol. I am passionate about learning how things work and understanding how to construct them in a digital manner.</p>
-            <img src="apolocute.jpg" alt="apolorhey" width="200">
+            <h1>Apolo Rhey Cericos</h1>
+            <p>I am a 19-year-old student residing in Lindaville Subdivision Phase 2, Tagbilaran City, Bohol. I am passionate about learning how things work and understanding how to construct them in a digital manner.</p>
+            <img src="apolocute.jpg" alt="Apolo Rhey Cericos" width="200">
 
             <h2>About Me</h2>
             <p>
-                I’m currently studying Bachelor of Science in Information Technology (BSIT) at Holy Name University. 
-                My hobbies include 
-                <a href="https://open.spotify.com/playlist/5eqARmhWM2BcbOC0RuHzFu" target="_blank" class="music-link">listening to music</a>, 
-                <a href="https://boxd.it/cLWHP" target="_blank" class="movie-link">watching movies/series'</a>, 
-                <span class="basketball-link">playing basketball</span>, and
-                <span class="reading-link">reading</span>.
+                I am currently pursuing a Bachelor of Science in Information Technology (BSIT) at Holy Name University. 
+                My interests include 
+                <a href="https://open.spotify.com/playlist/5eqARmhWM2BcbOC0RuHzFu" target="_blank" class="interest-link">music</a>, 
+                <a href="https://boxd.it/cLWHP" target="_blank" class="interest-link">films and series</a>, 
+                basketball, and reading.
             </p>
 
+            <h3>Educational Background</h3>
+            <div class="education-item">
+                <h4>Holy Name University</h4>
+                <p>Bachelor of Science in Information Technology (BSIT)<br>2025-2026 (Sophomore Year)</p>
+            </div>
+            <div class="education-item">
+                <h4>Holy Spirit School of Tagbilaran</h4>
+                <p>Senior High School<br>2023-2024 (Graduated)</p>
+            </div>
+            <div class="education-item">
+                <h4>GreAtMinds Leadership Academy</h4>
+                <p>Elementary to Junior High School<br>2012-2022</p>
+            </div>
+
+            <h3>Achievements</h3>
+            <div class="achievement-item">
+                <h4>Academic Excellence at GreAtMinds Leadership Academy</h4>
+                <p>Consistent High Honor Student throughout my years at the academy.</p>
+            </div>
+            <div class="achievement-item">
+                <h4>MTAP 2nd Placer</h4>
+                <p>Achieved 2nd place in the Mathematics Teachers Association of the Philippines (MTAP) competition during 7th grade.</p>
+            </div>
+            <div class="achievement-item">
+                <h4>UP Kadugong Bol-anon Participant</h4>
+                <p>Participated in the UP Kadugong Bol-anon program for two consecutive years.</p>
+            </div>
+            <div class="achievement-item">
+                <h4>Photojournalism Interschool Contest</h4>
+                <p>Garnered 5th place in a Photojournalism Interschool contest.</p>
+            </div>
+            <div class="achievement-item">
+                <h4>Classroom Achiever at Holy Spirit School of Tagbilaran</h4>
+                <p>Recognized as a classroom achiever during my senior high school years.</p>
+            </div>
+
             <h3>Skills</h3>
-            <ul>
-                <li>Video Editing: <span class="star">★★★★☆</span></li>
-                <li>HTML, C, Javascript Coding: <span class="star">★★★★★</span></li>
-            </ul>
+            <div>
+                <strong>Video Editing:</strong>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div>
+                <strong>HTML, C, JavaScript Coding:</strong>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 100%;"></div>
+                </div>
+            </div>
         </div>
 
         <div id="contact" class="section">
             <h1>Contact Me</h1>
-            <p>Feel free to reach out to me via the form below, my personal Facebook account, my phone number, or email me at [apolocericos3@gmail.com].</p> 
+            <p>If you would like to connect, please use the form below or reach out via my phone, Facebook, or email at apolocericos3@gmail.com.</p> 
             
             <a href="tel:09683996560" id="phone" class="contact-info">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.48 2.53.74 3.88.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.35.26 2.67.74 3.88.13.28.07.61-.27 1.11l-2.35 2.35z"/></svg>
@@ -271,24 +336,24 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 
-                <button type="submit">Send</button>
+                <button type="submit">Send Message</button>
             </form>
         </div>
 
         <div id="projects" class="section">
             <h1>My Projects</h1>
-            <p>Here are some of my past and ongoing projects and outputs.</p>
+            <p>Below are some of my academic and personal projects, showcasing my skills in software development and problem-solving.</p>
 
             <div class="project">
                 <h2>InfoTrack [Information Tracker]</h2>
-                <p>An ongoing project for my CCS 104 class. It is made specifically for an IT services company to make viewing employee info more convenient.</p>
-                <a href="CCS104FINAL.exe" download>View Project</a>
+                <p>An ongoing project developed for my CCS 104 course. This application is designed for an IT services company to streamline employee information management and enhance accessibility.</p>
+                <a href="CCS104FINAL.exe" download>Download Project</a>
             </div>
 
             <div class="project">
                 <h2>Budget Tracker and Expense Calculator</h2>
-                <p>A previous project from my CCS 102 class. It is made to make budgeting and tracking expenses easier.</p>
-                <a href="project.exe" download>View Project</a>
+                <p>A completed project from my CCS 102 course. This tool assists users in managing budgets and tracking expenses efficiently, promoting financial awareness.</p>
+                <a href="project.exe" download>Download Project</a>
             </div>
         </div>
     </div>
@@ -298,4 +363,3 @@
     </div>
 </body>
 </html>
-
