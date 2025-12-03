@@ -4,9 +4,7 @@
     <title>Apolo Rhey Cericos - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        html {
-    scroll-behavior: smooth;
-}
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -33,11 +31,9 @@
             padding: 0.5rem 1rem;
             border-radius: 4px;
             transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
         }
-        #nav a:hover {
-            background-color: #34495e;
-            color: #fff;
-        }
+        #nav a:hover { background-color: #34495e; color: #fff; }
         #main {
             max-width: 1000px;
             margin: 2rem auto;
@@ -47,18 +43,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .section {
-    margin-bottom: 3rem;
-    animation: fadeInUp 0.6s ease-out;
-    scroll-margin-top: 80px;
-}
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.6s ease-out;
+            scroll-margin-top: 80px;
         }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        #home {
-            text-align: center;
-        }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        #home { text-align: center; }
         #home img {
             border-radius: 50%;
             margin-top: 1rem;
@@ -66,34 +56,12 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease;
         }
-        #home img:hover {
-            transform: scale(1.05);
-        }
-        #home h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        #home h2, #home h3 {
-            color: #34495e;
-            margin-top: 2rem;
-        }
-        #home p {
-            font-size: 1.1rem;
-            color: #555;
-            max-width: 700px;
-            margin: 0 auto 1rem;
-        }
-
-        .interest-link {
-            color: #3498db;
-            font-weight: 500;
-            text-decoration: none;
-        }
-        .interest-link:hover {
-            text-decoration: underline;
-        }
-
+        #home img:hover { transform: scale(1.05); }
+        #home h1 { font-size: 2.5rem; color: #2c3e50; margin-bottom: 1rem; }
+        #home h2, #home h3 { color: #34495e; margin-top: 2rem; }
+        #home p { font-size: 1.1rem; color: #555; max-width: 700px; margin: 0 auto 1rem; }
+        .interest-link { color: #3498db; font-weight: 500; text-decoration: none; }
+        .interest-link:hover { text-decoration: underline; }
         .education-item, .achievement-item {
             margin-bottom: 1rem;
             padding: 1rem;
@@ -101,30 +69,10 @@
             border-left: 4px solid #3498db;
             border-radius: 4px;
         }
-        .education-item h4, .achievement-item h4 {
-            margin: 0 0 0.5rem 0;
-            color: #2c3e50;
-            font-weight: 500;
-        }
-        .education-item p, .achievement-item p {
-            margin: 0;
-            color: #555;
-        }
-
-        .skill-bar {
-            background-color: #ecf0f1;
-            border-radius: 10px;
-            height: 10px;
-            margin: 0.5rem 0;
-            overflow: hidden;
-        }
-        .skill-fill {
-            height: 100%;
-            background-color: #3498db;
-            border-radius: 10px;
-            transition: width 0.3s ease;
-        }
-
+        .education-item h4, .achievement-item h4 { margin: 0 0 0.5rem 0; color: #2c3e50; font-weight: 500; }
+        .education-item p, .achievement-item p { margin: 0; color: #555; }
+        .skill-bar { background-color: #ecf0f1; border-radius: 10px; height: 10px; margin: 0.5rem 0; overflow: hidden; }
+        .skill-fill { height: 100%; background-color: #3498db; border-radius: 10px; transition: width 0.3s ease; }
         .contact-info {
             display: inline-flex;
             align-items: center;
@@ -140,16 +88,8 @@
         #phone { color: #27ae60; }
         #facebook { color: #3b5998; }
         #github { color: #000; }
-        .contact-info svg {
-            width: 20px;
-            height: 20px;
-            fill: currentColor;
-            flex-shrink: 0;
-        }
-        .contact-info:hover {
-            transform: translateY(-2px);
-        }
-
+        .contact-info svg { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
+        .contact-info:hover { transform: translateY(-2px); }
         #contact form {
             display: flex;
             flex-direction: column;
@@ -160,11 +100,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        #contact label {
-            margin-top: 1rem;
-            font-weight: 500;
-            color: #2c3e50;
-        }
+        #contact label { margin-top: 1rem; font-weight: 500; color: #2c3e50; }
         #contact input, #contact textarea {
             padding: 0.75rem;
             margin-top: 0.5rem;
@@ -172,10 +108,7 @@
             border-radius: 4px;
             transition: border-color 0.3s ease;
         }
-        #contact input:focus, #contact textarea:focus {
-            border-color: #3498db;
-            outline: none;
-        }
+        #contact input:focus, #contact textarea:focus { border-color: #3498db; outline: none; }
         #contact button {
             margin-top: 1.5rem;
             padding: 0.75rem;
@@ -187,11 +120,7 @@
             font-weight: 500;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
-        #contact button:hover {
-            background-color: #2980b9;
-            transform: translateY(-2px);
-        }
-
+        #contact button:hover { background-color: #2980b9; transform: translateY(-2px); }
         .project {
             margin-bottom: 2rem;
             padding: 1.5rem;
@@ -201,18 +130,9 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        }
-        .project h2 {
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-        }
-        .project p {
-            color: #555;
-            margin-bottom: 1rem;
-        }
+        .project:hover { transform: translateY(-5px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+        .project h2 { color: #2c3e50; margin-bottom: 0.5rem; }
+        .project p { color: #555; margin-bottom: 1rem; }
         .project a {
             display: inline-block;
             margin-top: 1rem;
@@ -223,18 +143,8 @@
             border-radius: 4px;
             transition: background-color 0.3s ease;
         }
-        .project a:hover {
-            background-color: #2980b9;
-        }
-
-        #footer {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            margin-top: 2rem;
-        }
-
+        .project a:hover { background-color: #2980b9; }
+        #footer { text-align: center; padding: 1.5rem; background-color: #2c3e50; color: #ecf0f1; margin-top: 2rem; }
         @media (max-width: 768px) {
             #main { margin: 1rem; padding: 1rem; }
             #home h1 { font-size: 2rem; }
@@ -259,31 +169,19 @@
             <img src="apolocute.jpg" alt="Apolo Rhey Cericos" width="200">
 
             <h2>About Me</h2>
-            <p>
-                I am currently pursuing a Bachelor of Science in Information Technology (BSIT) at Holy Name University. 
-                My interests include 
+            <p>I am currently pursuing a Bachelor of Science in Information Technology (BSIT) at Holy Name University. My interests include 
                 <a href="https://open.spotify.com/playlist/5eqARmhWM2BcbOC0RuHzFu" target="_blank" class="interest-link">music</a>, 
-                <a href="https://boxd.it/cLWHP" target="_blank" class="interest-link">films and series</a>, 
-                basketball, and reading.
-            </p>
+                <a href="https://boxd.it/cLWHP" target="_blank" class="interest-link">films and series</a>, basketball, and reading.</p>
 
             <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
-
-                <div class="contact-info" style="color:#e67e22; display: flex; align-items: center; gap: 6px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:20px;height:20px;">
-                        <path d="M7 10h5V5H7v5zm6 0h5V5h-5v5zm0 6h5v-5h-5v5zm-6 0h5v-5H7v5zM19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v15c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
-                    </svg>
+                <div class="contact-info" style="color:#e67e22;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10h5V5H7v5zm6 0h5V5h-5v5zm0 6h5v-5h-5v5zm-6 0h5v-5H7v5zM19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v15c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                     <span>Date of Birth: 04-10-2006</span>
                 </div>
-
-                <div class="contact-info" style="color:#8e44ad; display: flex; align-items: center; gap: 6px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:20px;height:20px;">
-                        <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 
-                        9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
-                    </svg>
+                <div class="contact-info" style="color:#8e44ad;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
                     <span>Lindaville Subdivision Phase 2, Tagbilaran City, Bohol</span>
                 </div>
-
             </div>
 
             <h3>Educational Background</h3>
@@ -325,24 +223,16 @@
             <h3>Skills</h3>
             <div>
                 <strong>Video Editing:</strong>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 80%;"></div>
-                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
             </div>
             <div>
                 <strong>HTML, C, JavaScript Coding:</strong>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 100%;"></div>
-                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
             </div>
-
             <div>
                 <strong>People Management & Communication:</strong>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 100%;"></div>
-                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
             </div>
-
         </div>
 
         <div id="contact" class="section">
@@ -353,43 +243,33 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.48 2.53.74 3.88.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.35.26 2.67.74 3.88.13.28.07.61-.27 1.11l-2.35 2.35z"/></svg>
                 09683996560
             </a>
-
             <a href="https://www.facebook.com/serikosuuu" target="_blank" id="facebook" class="contact-info">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.54 9.93v-7.03h-2.7v-2.9h2.7V9.41c0-2.67 1.59-4.15 4.02-4.15 1.16 0 2.38.21 2.38.21v2.62h-1.34c-1.32 0-1.73.82-1.73 1.66v2h2.95l-.47 2.9h-2.48v7.03A10 10 0 0022 12z"/></svg>
                 Facebook
             </a>
-
             <a href="https://github.com/serikosuu" target="_blank" id="github" class="contact-info">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.43 7.86 10.96.58.1.79-.25.79-.56v-2.1c-3.2.7-3.87-1.39-3.87-1.39-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.26 3.4.96.1-.75.41-1.26.75-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.2-3.11-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.19a11 11 0 015.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.57.23 2.73.11 3.02.75.81 1.2 1.85 1.2 3.11 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A10.99 10.99 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
-                </svg>
-                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.43 7.86 10.96.58.1.79-.25.79-.56v-2.1c-3.2.7-3.87-1.39-3.87-1.39-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.26 3.4.96.1-.75.41-1.26.75-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.2-3.11-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.19a11 11 0 015.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.57.23 2.73.11 3.02.75.81 1.2 1.85 1.2 3.11 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A10.99 10.99 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                Github
             </a>
 
             <form action="https://formspree.io/f/xwpgkppa" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                
                 <button type="submit">Send Message</button>
             </form>
         </div>
 
         <div id="projects" class="section">
             <h1>My Projects</h1>
-            <p>Below are some of my academic and personal projects, showcasing my skills in software development and problem-solving.</p>
-
             <div class="project">
                 <h2>InfoTrack [Information Tracker]</h2>
                 <p>An ongoing project developed for my CCS 104 course. This application is designed for an IT services company to streamline employee information management and enhance accessibility.</p>
                 <a href="CCS104FINAL.exe" download>Download Project</a>
             </div>
-
             <div class="project">
                 <h2>Budget Tracker and Expense Calculator</h2>
                 <p>A completed project from my CCS 102 course. This tool assists users in managing budgets and tracking expenses efficiently, promoting financial awareness.</p>
@@ -398,10 +278,21 @@
         </div>
     </div>
 
-    <div id="footer">
-        <p>&copy; 2025 Apolo Rhey Cericos. All rights reserved.</p>
-    </div>
+    <div id="footer">&copy; 2025 Apolo Rhey Cericos. All rights reserved.</div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('#nav a');
+        function showSection(id) {
+            sections.forEach(sec => { sec.style.display = (sec.id === id) ? 'block' : 'none'; });
+        }
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                showSection(link.getAttribute('href').replace('#',''));
+            });
+        });
+        showSection('home');
+    </script>
 </body>
 </html>
-
-
